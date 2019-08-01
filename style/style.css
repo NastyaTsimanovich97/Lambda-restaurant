@@ -256,7 +256,57 @@ h1 {
   position: relative;
   bottom: 159px;
   height: 758px;
+  display: grid;
+  grid-template-areas: ". square";
+  grid-template-columns: 1.04fr 1fr;
+  align-content: center;
   background-image: url(../assets/bg@2.png);
+}
+
+.backgroung-square {
+  width: 35.5vw; 
+  height: 35vw;
+  grid-area: square;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6705882352941176)
+}
+
+.backgroung-square>img {
+  margin-top: 3.2%;
+  margin-bottom: 1.8%;
+}
+
+.title-ingredients {
+  margin-bottom: 2%;
+  font-family: 'Yeseva One', cursive, 'Georgia';
+  font-size: 2.2vw;
+  color: #FFFFFF;
+}
+
+.text-ingredients {
+  margin-bottom: 4%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.images-ingredients {
+  margin-top: 5.2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-ingredients >img {
+  margin: 2%;
+  border: 2px solid #000000b7;
+  border-radius: 100%;
 }
 
 
