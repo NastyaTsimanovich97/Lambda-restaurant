@@ -322,7 +322,7 @@ h1 {
   bottom: 159px;
   height: 994px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   background-image: url(../assets/pattern@2X.png);
@@ -359,8 +359,8 @@ h1 {
 }
 
 .line {
-  margin-top: 1.1%;
-  margin-bottom: 1.1%;
+  margin-top: 2.1%;
+  margin-bottom: 2.1%;
   width: 27vw;
   height: 2px;
   border-top:1px solid #CC9900;
@@ -385,7 +385,7 @@ h1 {
 .appetisers,
 .startes {
   align-self: start;
-  margin-top: 12%;
+  margin-top: 5%;
 }
 
 .main-dishes,
@@ -425,6 +425,9 @@ h1 {
   position: relative;
   bottom: 159px;
   height: 761px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(../assets/bg5.jpg);
   background-size: cover;
   background-position-y: 34%;
@@ -433,19 +436,48 @@ h1 {
 .reviews-square {
   width: 771px;
   height: 558px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.6705882352941176);
+}
+.reviews-square img {
+  margin-top: 0.9%;
+  margin-bottom: 1.7%;
 }
 
 .reviews-header {
+  margin-top: 3.7%;
   font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
-  font-size: 1.2vw;
+  font-size: 2.2vw;
   color: #FFFFFF;
 }
 
 .reviews-text {
+  position: relative;
   font-family: 'Gentium Book Basic', serif;
-  font-size: 1vw;
-  color: #FFFFFF;
+  font-size: 1.7vw;
+  text-align: center;
+  line-height: 2.8vw;
+  color: #DDE0DF;
+}
+
+.reviews-quotes {
+  position: absolute;
+  top: 7%;
+  right: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 6.2vw;
+  color: #F2F4F4;
+}
+
+.reviews-author{
+  margin-bottom: 2.8%;
+  line-height: 5.8vw;
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 1.2vw;
+  color: #F2F4F4;
 }
 
 
