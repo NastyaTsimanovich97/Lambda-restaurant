@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700|Lato:300,400,700,900|Open+Sans:300,400,600,700|Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700|Lato:300,400,700,900|Open+Sans:300,400,400i,600,700|Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -210,42 +210,52 @@
             </section>
         </article>
 
-        <article id="reservation">
-            <section>
-                <img src="" alt=""><img src="" alt="">
-                <section>
-                    <p>Just the right food</p>
-                    <img src="" alt="divider">
-                    <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
-                            Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
-                    <form action="" class="reservation-form">
-                        <button></button>
-                        <fieldset>
-                            <label for="input-name">Name</label> 
-                            <input id="input-name" type="text" placeholder="your name" required>
+        <article class="article-reservation" id="reservation">
+            <img class="reservation-image-dish" src="./assets/image@1X.png" alt="dish">
+            <img class="reservation-image-desert" src="./assets/image@1X2.png" alt="dessert">
+            <section class="section-reservation">
+                <p class="reservation-heading">Just the right food</p>
+                <img src="./assets/razdelitelorange.png" alt="divider" width="30%">
+                <p class="reservation-text-1">If you’ve been to one of our restaurants, you’ve seen – and<br> tasted – what keeps our customers 
+                    coming back for more.<br> Perfect materials and freshly baked food.
+                </p>
+                <p class="reservation-text-2">Delicious Lambda cakes,  muffins, and gourmet coffees make<br> us hard to resist!
+                     Stop in today and check us out! Perfect<br> materials and freshly baked food.</p>
+                </p>
+                <form action="" class="reservation-form">
+                    <fieldset>
+                        <div class="row-lable-name">
+                            <label for="input-name">Name</label>
                             <label for="input-email">Email</label>
-                            <input id ="input-email" type="text" placeholder="your email" required>
-                            <label for="input-date">Date</label>
-                            <input id="input-date" type="datetime-local" placeholder="date" required min="2019-06-01T07:00">
+                        </div>
+                        <div class="row-input-name">
+                            <input id="input-name" type="text" placeholder="your name*" required>
+                            <input id ="input-email" type="text" placeholder="your email*" required>
+                        </div>
+                        <div class="row-lable-date">
+                            <label class="label-email" for="input-date">Date</label>
                             <label for="input-party-number">Party number</label>
-                            <select id="input-party-number">
-                                <option value="">party number</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="more then 10">more then 10</option>
-                            </select>
-                            </fieldset>
-                        <button type="submit">Book now!</button>
-                    </form>
-                </section>
+                        </div>
+                        <div class="row-input-date">   
+                        <input id="input-date" type="date" placeholder="date*" required min="2019-06-01T07:00">
+                        <select id="input-party-number">
+                            <option value="">party number</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="more then 10">more then 10</option>
+                        </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="button-form">Book now!</button>
+                </form>
             </section>
         </article>
     </main>

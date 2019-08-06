@@ -26,7 +26,6 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
  
   display: inline-block;
   text-decoration: inherit;
@@ -82,6 +81,9 @@ li {
   text-decoration:none;
   list-style: none;
   display: inline;
+}
+fieldset {
+  border: 0;
 }
 
 header{
@@ -352,7 +354,6 @@ h1 {
   justify-self: end;
 }
 
-
 .description {
   font-family: 'Lato', sans-serif;
   font-size: 1vw;
@@ -434,7 +435,7 @@ h1 {
 }
 
 .reviews-square {
-  width: 771px;
+  width: 48vw;
   height: 558px;
   display: flex;
   flex-direction: column;
@@ -480,6 +481,103 @@ h1 {
   color: #F2F4F4;
 }
 
+.article-reservation {
+  position: relative;
+  bottom: 159px;
+  height: 710px;
+  display: grid;
+  grid-template-columns: 2.7fr 0.6fr 4.6fr;
+  grid-gap: 2%;
+  align-items: center;
+  background-image: url(../assets/pattern@1X.png);
+}
+
+.reservation-image-dish {
+  justify-self: right;
+}
+
+.section-reservation {
+  justify-self: self-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-heading {
+  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
+  font-size: 2.2vw;
+  color: #CC9900;
+}
+
+.reservation-text-1,
+.reservation-text-2 {
+  margin-top: 3%;
+  font-family: 'Lato', sans-serif;
+  line-height: 140%;
+  text-align: center;
+  color: #4C4C4C;
+}
+
+.reservation-text-2{
+  margin-bottom: 5%;
+}
+
+.reservation-form {
+  position: relative;
+  width: 26vw;
+  height: 210px;
+  margin-bottom: 5%;
+}
+
+fieldset{
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+}
+
+fieldset div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 7%;
+}
+
+.row-lable-name,
+.row-lable-date {
+  margin-bottom: 2%;
+}
+
+.row-input-name,
+.row-input-date {
+  margin-bottom: 4%;
+}
+
+.reservation-form label {
+  font-family: 'Open Sans', sans-serif;
+  color: #C9A131;
+}
+
+.reservation-form input,
+#input-party-number {
+  width: 12.2vw;
+  height: 37px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  text-indent: 5%;
+  border: 0.5px solid #4C4C4C;
+}
+
+.button-form {
+  position: absolute;
+  left: 26.2%;
+  width: 12.3vw;
+  height: 37px;
+  margin-top: 3.5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+  color: #FFFFFF;
+  background-color: #C9A131;
+  border: 0;
+}
 
 
 .footer-social-links .icon-facebook,
