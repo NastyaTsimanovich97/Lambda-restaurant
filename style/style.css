@@ -615,10 +615,11 @@ footer {
 .about-us {
   position: relative;
   left: 8.5%;
-  bottom: 4%;
+  bottom: 2%;
   width: 343px;
   margin: auto;
   text-align: center;
+  line-height: 148%;
 }
 
 .opening-hours,
@@ -626,12 +627,14 @@ footer {
   width: 350px;
   margin: auto;
   text-align: center;
+  
 }
 
 .location{
   position: relative;
-  right: 8.5%;
-  bottom: 4%;
+  right: 8%;
+  bottom: 3%;
+  line-height: 160%;
 }
 
 .regular {
