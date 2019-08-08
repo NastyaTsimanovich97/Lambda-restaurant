@@ -64,7 +64,6 @@
 body {
   width: 100%;
   max-width: 1600px;
-  height: 50.4vh;
 }
 
 a{
@@ -73,54 +72,50 @@ a{
 }
 
 li {
+  display: inline;
   text-decoration:none;
   list-style: none;
-  display: inline;
 }
 
-fieldset {
-  border: 0;
-}
+fieldset { border: 0;}
 
 header{
-  position: relative;
-  height: 159px;
+  position: absolute;
+  z-index: 2;
   display: grid;
   grid-template-areas: "h1 menu social-links";
   grid-template-columns: 3fr 6.2fr 2fr;
+  width: 100%;
+  padding-bottom: 7%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 5%, rgba(255, 255, 255, 0) 80%);
-  z-index: 2;
 }
 
-
 h1 {
-  width: 156px;
-  height: 26px;
   grid-area: h1;
   justify-self: end;
-  margin-top: 35px;
-  margin-right: 21.6%;
-  font-family: 'Yeseva One', cursive, 'Georgia';
-  font-size: 26pt;
+  margin-top: 9%;
+  margin-right: 22.6%;
+  font-size: 2.2vw;
+  font-family: 'Yeseva One', cursive, 'Georgia', serif;;
   color: #DBDAD8;
   opacity: 0.9;
 }
 
 .menu{
-  margin-top: 44px;
-  margin-left: 12.5%;
-  width: 100%;
-  grid-area: menu;
-  list-style: none;
   position: absolute;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
+  grid-area: menu;
+  width: 100%;
+  margin-top: 5.5%;
+  margin-left: 12.5%;
+  list-style: none;
 }
 
 .menu > li {
   margin: 2.8%;
-  font-family: 'Gentium Book Basic', serif;
   font-size: 1.4vw;
+  font-family: 'Gentium Book Basic', 'Georgia', serif;
   color: #FFFFFF;
 }
 
@@ -130,188 +125,183 @@ h1 {
 }
 
 .social-links ul {
-  margin-top: 44px;
-  margin-right: -20%;
-  grid-area: social-links;
-  font-size: 1.4vw;
-  color: #DAB33E;
-  list-style: none;
   position: absolute;
   left:50%;
   transform: translateX(-50%);
+  grid-area: social-links;
+  margin-top: 17%;
+  margin-right: -20%;
+  font-size: 1.4vw;
+  color: #DAB33E;
+  list-style: none;
 }
 
-.social-links ul>li:hover {
-  font-size: 1.8vw;
-}
+.social-links ul>li:hover { font-size: 1.8vw; }
 
 .home {
-  position: relative;
-  bottom: 159px;
-  height: 750px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 8.4%;
   background-image: url(../assets/Bg@1X.png);
   background-size: cover;
-  z-index: 1;
 }
 
 .home p {
-  margin-top: 4%;
+  margin-top: 8%;
   margin-bottom: 0.3%;
-  font-family: 'Yeseva One', cursive, 'Georgia';
   font-size: 5.5vw;
   line-height: 1.38;
+  font-family: 'Yeseva One', cursive, 'Georgia', serif;;
   text-align: center;
   color: #F6F5F4;
 }
 
-.home-button {
-  word-spacing: 2vw;  
-}
+.home-button { word-spacing: 2vw; }
 
 .book-table {
+  margin-top: 6%;
+  padding: 1.2em 3.6em;
+  font-size: 1.03vw;
+  font-weight: 400;
+  font-family: 'Lato', 'Geneva', sans-serif;
+  word-spacing: 0.2vw;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: black;
+  opacity: 0.8;
+  appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -o-appearance: button;
+  -webkit-appearance: button;
+}
+
+.see-menu {
+  margin-top: 6%;
+  padding: 1.2em 3.6em;
+  font-size: 1.03vw;
+  font-weight: 400;
+  font-family: 'Lato', 'Geneva', sans-serif;
+  word-spacing: 0.2vw;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.3019607843137254);
+  border: 1px solid #FFFFFF;
   -moz-appearance: button;
   -ms-appearance: button;
   -o-appearance: button;
   -webkit-appearance: button;
   appearance: button;
-  margin-top: 6%;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.03vw;
-  font-weight: 400;
-  word-spacing: 0.2vw;
-  text-decoration: none;
-  background-color: black;
-  color: #FFFFFF;
-  padding: 1.2em 3.6em;
-  opacity: 0.8;
 }
 
+.see-menu:hover,
 .book-table:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-.see-menu {
-  -moz-appearance: button;
-  -ms-appearance: button;
-  -o-appearance: button;
-  -webkit-appearance: button;
-  appearance: button;
-  margin-top: 6%;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.03vw;
-  font-weight: 400;
-  word-spacing: 0.2vw;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.5019607843137254);
-  color: #FFFFFF;
-  padding: 1.2em 3.6em;
-  border: 1px solid #FFFFFF;
-}
-
-.see-menu:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
 
 .about {
-  position: relative;
-  bottom: 159px;
-  height: 710px;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1.4%;
   background-image: url(../assets/pattern@1X.png);
 }
 
 .section-about {
-  margin-top: 5.5%;
-  margin-left: 12.2%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5.5%;
+  margin-left: 12.2%;
 }
 
 .title-about {
   margin-bottom: 0.6%;
-  font-family: 'Yeseva One', cursive, 'Georgia';
   font-size: 2.2vw;
+  font-family: 'Yeseva One', cursive, 'Georgia', serif;
   color: #CC9900;
 }
 
 .text-about {
   margin-top: 2.8%;
   margin-left: 2%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Geneva', sans-serif;
   font-size: 1vw;
   text-align: center;
   line-height: 150%;
 }
 
-.cook {
+.chef-photo {
   margin-top: 8%;
   margin-left: 12%;
 }
 
-.dish {
+.image-about-dish {
   margin-top: 7%;
   margin-left: -9%;
 }
 
+
 .article-ingredients {
-  position: relative;
-  bottom: 159px;
-  height: 758px;
   display: grid;
   grid-template-areas: ". square";
   grid-template-columns: 1.04fr 1fr;
   align-content: center;
+  width: 100%;
+  padding-top: 6%;
+  padding-bottom: 6.3%;
   background-image: url(../assets/bg@2.png);
+  background-size: cover;
 }
 
-.backgroung-square {
-  width: 35.5vw; 
-  height: 35vw;
+.background-square {
   grid-area: square;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6705882352941176)
+  width: 35.5vw; 
+  height: 35vw;
+  background-color: rgba(0, 0, 0, 0.6705882352941176);
 }
 
-.backgroung-square>img {
+.background-square>img {
   margin-top: 3.2%;
   margin-bottom: 1.8%;
 }
 
 .title-ingredients {
+  margin-top: 1.8%;
   margin-bottom: 2%;
-  font-family: 'Yeseva One', cursive, 'Georgia';
   font-size: 2.2vw;
+  font-family: 'Yeseva One', cursive, 'Georgia';
   color: #FFFFFF;
 }
 
 .text-ingredients {
   margin-bottom: 4%;
-  font-family: 'Lato', sans-serif;
   font-size: 1vw;
-  text-align: center;
+  font-family: 'Lato', 'Geneva', sans-serif;
   line-height: 160%;
+  text-align: center;
   color: #FFFFFF;
 }
 
 .images-ingredients {
-  margin-top: 5.2%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 5.2%;
 }
 
 .images-ingredients >img {
@@ -320,78 +310,86 @@ h1 {
   border-radius: 100%;
 }
 
-.images-ingredients >img:hover {
-  border-radius: 0%;
-}
+.images-ingredients >img:hover { border-radius: 0%; }
+
 
 .article-menu{
-  position: relative;
-  bottom: 159px;
-  height: 994px;
   display: grid;
   grid-template-rows: 1fr 1.5fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  width: 100%;
+  padding-top: 6%;
   background-image: url(../assets/pattern@2X.png);
+  background-size: cover;
 }
 
 .heading-menu {
   text-align: center;
-  font-family: 'Yeseva One', cursive, 'Georgia';
   font-size: 2.2vw;
+  font-family: 'Yeseva One', cursive, 'Georgia';
   color: #CC9900;
 }
 
 .menu-divider {
+  align-self: center;
   margin-top: 3.2%;
   margin-bottom: 0.5%;
-  align-self: center;
 }
 
 .name {
   display: grid;
   grid-template-columns: 9fr 1fr;
-  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
   font-size: 1.2vw;
+  font-family:'Yeseva One', cursive, 'Georgia', 'Lato',  sans-serif;
   color: #CC9900;
 }
-.price {
-  justify-self: end;
-}
+
+.price { justify-self: end;}
 
 .description {
-  font-family: 'Lato', sans-serif;
   font-size: 1vw;
+  font-family: 'Lato', 'Geneva', sans-serif;
 }
 
 .line {
-  margin-top: 2.1%;
-  margin-bottom: 2.1%;
   width: 27vw;
   height: 2px;
+  margin-top: 2.1%;
+  margin-bottom: 2.1%;
   border-top:1px solid #CC9900;
 }
+
 .menu-dish{
   margin-top: 4%;
   margin-bottom: 4%;
 }
 
 .salads,
+.main-dishes,
+.appetisers,
+.startes {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 27.8vw;
+}
+
+.salads,
 .main-dishes {
   align-self: end;
-  margin-bottom: 8%;
+  margin-bottom: 11%;
 }
 
 .appetisers,
 .salads {
-  margin-right: 10%;
   justify-self: end;
+  margin-right: 10%;
 }
 
 .appetisers,
 .startes {
   align-self: start;
-  margin-top: 5%;
 }
 
 .main-dishes,
@@ -399,53 +397,45 @@ h1 {
   margin-left: 10%;
 }
 
-.salads,
-.main-dishes,
-.appetisers,
-.startes {
-  width: 27.8vw;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
 .special {
-  width: 70px;
-  height: 23px;
+  width: 4.1vw;
+  height: 1.3vw;
   margin-left: auto;
   margin-right: 0;
-  font-family: 'Lato', sans-serif;
   font-size: 0.8vw;
+  font-family: 'Lato', 'Geneva', sans-serif;
   text-align: center;
   color: #FFFFFF;
   background-color: #C89F2D;
+  opacity: 0.8;
 }
 
 .special-text {
   width: 27vw;
-  border: 0.09vw solid #C89F2D;
   padding: 1.2%;
+  border: 0.09vw solid #C89F2D;
 }
 
+
 .article-reviews {
-  position: relative;
-  bottom: 159px;
-  height: 761px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding-top: 6%;
+  padding-bottom: 5.5%;
   background-image: url(../assets/bg5.jpg);
   background-size: cover;
   background-position-y: 34%;
 }
 
 .reviews-square {
-  width: 48vw;
-  height: 558px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 48vw;
+  height: 35.8vw;
   background-color: rgba(0, 0, 0, 0.6705882352941176);
 }
 .reviews-square img {
@@ -455,15 +445,15 @@ h1 {
 
 .reviews-header {
   margin-top: 3.7%;
-  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
   font-size: 2.2vw;
+  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
   color: #FFFFFF;
 }
 
 .reviews-text {
   position: relative;
-  font-family: 'Gentium Book Basic', serif;
   font-size: 1.7vw;
+  font-family: 'Gentium Book Basic', serif;
   text-align: center;
   line-height: 2.8vw;
   color: #DDE0DF;
@@ -473,33 +463,34 @@ h1 {
   position: absolute;
   top: 7%;
   right: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 6.2vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #F2F4F4;
 }
 
 .reviews-author{
   margin-bottom: 2.8%;
-  line-height: 5.8vw;
-  font-family: 'Gentium Book Basic', serif;
   font-size: 1.2vw;
+  font-family: 'Gentium Book Basic', serif;
+  line-height: 5.8vw;
   color: #F2F4F4;
 }
 
 .article-reservation {
-  position: relative;
-  bottom: 159px;
-  height: 710px;
   display: grid;
   grid-template-columns: 2.28fr 1.2fr 3.85fr;
   grid-gap: 2%;
   align-items: center;
+  width: 100%;
+  padding-top: 6%;
+  padding-bottom: 5.5%;
   background-image: url(../assets/pattern@1X.png);
+  background-size: cover;
 }
 
 .reservation-image-dish {
-  width: 54.5%;
   justify-self: right;
+  width: 54.5%;
 }
 
 .reservation-image-desert {
@@ -515,28 +506,27 @@ h1 {
 }
 
 .reservation-heading {
-  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
   font-size: 2.2vw;
+  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
   color: #CC9900;
 }
 
 .reservation-text-1,
 .reservation-text-2 {
   margin-top: 3%;
-  font-family: 'Lato', sans-serif;
   line-height: 140%;
+  font-size: 1vw;
+  font-family: 'Lato', 'Geneva', sans-serif;
   text-align: center;
   color: #4C4C4C;
 }
 
-.reservation-text-2{
-  margin-bottom: 5%;
-}
+.reservation-text-2{ margin-bottom: 5%; }
 
 .reservation-form {
   position: relative;
   width: 26vw;
-  height: 210px;
+  height: 13vw;
   margin-bottom: 5%;
 }
 
@@ -562,17 +552,19 @@ fieldset div{
 }
 
 .reservation-form label {
-  font-family: 'Open Sans', sans-serif;
+  font-size: 2vw;
+  font-family: 'Open Sans','Geneva', sans-serif;
   color: #C9A131;
 }
 
 .reservation-form input,
 #input-party-number {
   width: 12.2vw;
-  height: 37px;
-  font-family: 'Open Sans', sans-serif;
+  height: 2vw;
+  font-size: 0.9vw;
   font-style: italic;
-  text-indent: 5%;
+  font-family: 'Open Sans', 'Geneva', sans-serif;
+  text-indent: 0.5vw;
   border: 0.5px solid #4C4C4C;
 }
 
@@ -580,61 +572,57 @@ fieldset div{
   position: absolute;
   left: 26.2%;
   width: 12.3vw;
-  height: 37px;
+  height: 2vw;
   margin-top: 3.5%;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1vw;
+  font-family: 'Open Sans', 'Geneva', sans-serif;
   color: #FFFFFF;
   background-color: #C9A131;
   border: 0;
 }
 
+
 footer {
-  position: relative;
-  bottom: 159px;
-  height: 321px;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 4%;
   background-color: #191919;
 }
 
 .section-header {
-  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
   font-size: 1.3vw;
+  font-family:'Yeseva One', cursive, 'Georgia', 'Lato', sans-serif;
   color:#FEFEFE
 }
 
 .section-text {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1vw;
   font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
   color: #FFFFFF;
 }
 
 .about-us {
-  position: relative;
-  left: 8.5%;
-  bottom: 2%;
-  width: 343px;
-  margin: auto;
+  width: 21vw;
+  padding-top: 0.4%;
+  padding-left: 12%;
   text-align: center;
-  line-height: 148%;
+  line-height: 1.5vw;
 }
 
 .opening-hours,
 .location {
-  width: 350px;
-  margin: auto;
+  width: 21vw;
   text-align: center;
   
 }
 
 .location{
-  position: relative;
-  right: 8%;
-  bottom: 3%;
-  line-height: 160%;
+  width: 21vw;
+  padding-right: 12%;
 }
 
 .regular {
@@ -653,8 +641,7 @@ footer img {
   font-size: 1.1vw;
   color: #FFFFFF;
 }
+
 .pay-cards,
-.footer-social-links {
-  margin-top: 10%;
-}
+.footer-social-links { margin-top: 10%;}
 
