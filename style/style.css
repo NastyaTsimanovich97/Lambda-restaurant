@@ -155,7 +155,6 @@ h1 {
   margin-top: 8%;
   margin-bottom: 0.3%;
   font-size: 5.5vw;
-  line-height: 1.38;
   font-family: 'Yeseva One', cursive, 'Georgia', serif;;
   text-align: center;
   color: #F6F5F4;
@@ -552,7 +551,7 @@ fieldset div{
 }
 
 .reservation-form label {
-  font-size: 2vw;
+  font-size: 1.2vw;
   font-family: 'Open Sans','Geneva', sans-serif;
   color: #C9A131;
 }
@@ -642,6 +641,16 @@ footer img {
   color: #FFFFFF;
 }
 
-.pay-cards,
-.footer-social-links { margin-top: 10%;}
+.pay-cards { margin-top: 10%;}
 
+.footer-social-links { margin-top: 14%;}
+
+.scrollup {
+  position: fixed;
+  bottom: 2%;
+  right: 0%;
+  width: 6%;
+  height: 8%;
+  background: url(../assets/icons/icon_top.png) no-repeat;
+  opacity: 0.3;
+}

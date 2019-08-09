@@ -8,6 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lambda-Restaurant</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -292,4 +311,5 @@
         </section>
     </footer>
 </body>
+<a class="scrollup" href="#"></a>
 </html>
