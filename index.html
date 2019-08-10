@@ -11,20 +11,18 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-         
-        $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-        $('.scrollup').fadeIn();
-        } else {
-        $('.scrollup').fadeOut();
-        }
-        });
-         
-        $('.scrollup').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
-        });
-         
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                    } 
+                    else {
+                        $('.scrollup').fadeOut();
+                    }
+            });
+            $('.scrollup').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
         });
     </script>
 </head>
@@ -43,7 +41,7 @@
         </nav>
         <div class="social-links">
             <ul>
-                <li><i class="icon-twitter"></i></li>
+                <li><a href="https://twitter.com/?lang=ru" target="_blank"><i class="icon-twitter"></i></a></li>
                 <li><i class="icon-youtube"></i></li>
                 <li><i class="icon-facebook"></i></li>
             </ul>
@@ -248,15 +246,15 @@
                             <label for="input-email">Email</label>
                         </div>
                         <div class="row-input-name">
-                            <input id="input-name" type="text" placeholder="your name*" required>
-                            <input id ="input-email" type="text" placeholder="your email*" required>
+                            <input id="input-name" type="text" placeholder="your name*" required autocorrect="off">
+                            <input id ="input-email" type="email" placeholder="your email*" required autocapitalize="off" autocomplete="email">
                         </div>
                         <div class="row-lable-date">
                             <label class="label-email" for="input-date">Date</label>
                             <label for="input-party-number">Party number</label>
                         </div>
                         <div class="row-input-date">   
-                        <input id="input-date" type="date" placeholder="date*" required min="2019-06-01T07:00">
+                        <input id="input-date" type="datetime-local" placeholder="date*" required min="2019-06-01T07:00">
                         <select id="input-party-number">
                             <option value="">party number</option>
                             <option value="1">1</option>

@@ -131,12 +131,65 @@ h1 {
   grid-area: social-links;
   margin-top: 17%;
   margin-right: -20%;
+  
+}
+
+.icon-facebook,
+.icon-twitter,
+.icon-youtube {
   font-size: 1.4vw;
   color: #DAB33E;
   list-style: none;
 }
 
-.social-links ul>li:hover { font-size: 1.8vw; }
+.icon-facebook:hover,
+.icon-twitter:hover,
+.icon-youtube:hover { color: #FFFFFF; }
+
+
+@media only screen and (max-width:768px){
+  header {
+    grid-template-areas: "h1" "menu" "social-links";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,1fr);
+  }
+
+  h1 {
+    font-size: 3.2vw;
+    justify-self: left;
+    margin-top: 1%;
+    margin-left: 2.5%;
+  }
+
+  .menu{
+    justify-self: left;
+    margin-top: 1%;
+    margin-left: 0;
+    margin-bottom: 1%;
+  }
+
+  .menu > li {
+    font-size: 2.4vw;
+  }
+
+  .menu>li:hover{
+    padding: 0.4em 0.6em;
+    border-top: 1.5px #DBDAD8 solid;
+  }
+
+  .social-links ul {
+    left: 8%;
+    margin-top: 0.5%;
+    margin-right: 0;    
+  }
+
+  .icon-facebook,
+  .icon-twitter,
+  .icon-youtube {
+    font-size: 2.4vw;
+  }
+}
+
 
 .home {
   z-index: 1;
@@ -205,6 +258,29 @@ h1 {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width:768px){
+  .home p {
+    margin-top: 20%;
+    margin-bottom: 2%;
+    font-size: 7.5vw;
+  }
+  
+  .home-button { word-spacing: 2vw; }
+  
+  .book-table {
+    margin-top: 7%;
+    padding: 1.2em 3.6em;
+    font-size: 1.8vw;
+  }
+  
+  .see-menu {
+    margin-top: 7%;
+    padding: 1.2em 3.6em;
+    font-size: 1.8vw;  
+  }
+
+  .home img {width: 30%;}
+}
 
 .about {
   display: flex;
@@ -249,6 +325,34 @@ h1 {
   margin-left: -9%;
 }
 
+@media only screen and (max-width:768px){
+ 
+  .section-about {
+    margin-top: 5.5%;
+    margin-left: 2%;
+  }
+  
+  .title-about {
+    margin-bottom: 0.6%;
+    font-size: 3.8vw;
+  }
+  
+  .text-about {
+    margin-top: 2.8%;
+    margin-left: 2%;
+    font-size: 1.85vw;
+  }
+  
+  .chef-photo {
+    margin-top: 8%;
+    margin-left: 12%;
+  }
+  
+  .image-about-dish {
+    margin-top: 7%;
+    margin-left: 0;
+  }
+}
 
 .article-ingredients {
   display: grid;
@@ -311,6 +415,40 @@ h1 {
 
 .images-ingredients >img:hover { border-radius: 0%; }
 
+@media only screen and (max-width:768px){
+  .article-ingredients { grid-template-columns: 1fr 1fr; }
+
+  .background-square {
+    width: 48.375vw;
+    height: 47.75vw;
+  }
+  
+  .background-square>img {
+    margin-top: 3.2%;
+    margin-bottom: 1.8%;
+    width: 30%;
+  }
+  
+  .title-ingredients {
+    margin-top: 1.8%;
+    margin-bottom: 2%;
+    font-size: 3.8vw;
+  }
+  
+  .text-ingredients {
+    margin-bottom: 4%;
+    font-size: 1.85vw;
+  }
+  
+  .images-ingredients {
+    margin-top: 3.2%;
+  }
+  
+  .images-ingredients >img {
+    margin: 2%;
+    width: 24%;
+  }
+}
 
 .article-menu{
   display: grid;
@@ -415,6 +553,46 @@ h1 {
   border: 0.09vw solid #C89F2D;
 }
 
+@media only screen and (max-width:768px){
+  .article-menu{
+    display: flex;
+    flex-direction: column;
+  }
+    
+  .heading-menu {font-size: 3.2vw;}
+  
+  .name { font-size: 2.2vw;}
+  
+  .price { justify-self: end;}
+  
+  .description { font-size: 1.8vw;}
+  
+  .line { width: 100%; }
+  
+  .menu-dish{
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  
+  .salads,
+  .main-dishes,
+  .appetisers,
+  .startes {
+    align-self: center;
+    width: 47.8vw;
+    margin-bottom: 6%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+ 
+  .special {
+    width: 8.1vw;
+    height: 2.8vw;
+    font-size: 1.8vw;
+  }
+  
+  .special-text { width: 46.5vw;}
+}
 
 .article-reviews {
   display: flex;
@@ -475,6 +653,32 @@ h1 {
   color: #F2F4F4;
 }
 
+@media only screen and (max-width:768px){
+  
+  .reviews-square {
+    width: 60vw;
+    height: 53.8vw;
+  }
+
+  .reviews-square img {
+    margin-top: 0.9%;
+    margin-bottom: 1.7%;
+  }
+  
+  .reviews-header {
+    margin-top: 0.7%;
+    font-size: 3.8vw;
+  }
+  
+  .reviews-text {
+    font-size: 2.3vw;
+    line-height: 3.2vw;
+  }
+  
+  .reviews-quotes {font-size: 6.5vw;}
+  
+  .reviews-author{font-size: 2vw;}
+}
 .article-reservation {
   display: grid;
   grid-template-columns: 2.28fr 1.2fr 3.85fr;
@@ -580,6 +784,69 @@ fieldset div{
   border: 0;
 }
 
+@media only screen and (max-width:768px){
+  .article-reservation {
+    grid-template-areas: "img1 img2" ". form";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2%;
+    align-items: self-start;
+  }
+  
+  .reservation-image-dish {
+    grid-area: img1;
+    justify-self: right;
+    width: 54.5%;
+  }
+  
+  .reservation-image-desert {
+    grid-area: img2;
+    width: 54.5%;
+  }
+  
+  .section-reservation {
+    position: relative;
+    right: 50%;
+    grid-area: form;
+  }
+  
+  .reservation-heading {
+    font-size: 5vw;
+  }
+  
+  .reservation-text-1,
+  .reservation-text-2 {
+    font-size: 1.8vw;
+  }
+  
+  .reservation-text-2{ margin-bottom: 5%; }
+  
+  .reservation-form {
+    width: 45vw;
+    height: 22vw;
+  }
+  
+  .reservation-form label {
+    font-size: 2.2vw;
+  }
+  
+  .reservation-form input,
+  #input-party-number {
+    width: 20.2vw;
+    height: 3.8vw;
+    font-size: 1.9vw;
+    text-indent: 1vw;
+  }
+  
+  .button-form {
+    position: absolute;
+    left: 26.2%;
+    width: 20.2vw;
+    height: 3.8vw;
+    margin-top: 3.5%;
+    font-size: 1.9vw;
+  }
+}
 
 footer {
   display: flex;
@@ -612,16 +879,15 @@ footer {
   line-height: 1.5vw;
 }
 
-.opening-hours,
-.location {
+.opening-hours {
   width: 21vw;
   text-align: center;
-  
 }
 
 .location{
   width: 21vw;
   padding-right: 12%;
+  text-align: center;
 }
 
 .regular {
@@ -645,12 +911,54 @@ footer img {
 
 .footer-social-links { margin-top: 14%;}
 
+@media only screen and (max-width:768px){
+  .section-header { font-size: 2.3vw;  }
+  
+  .section-text { font-size: 1.5vw; }
+  
+  .about-us {
+    width: 41vw;
+    padding-top: 0.4%;
+    padding-left: 12%;
+    text-align: center;
+    line-height: 2vw;
+  }
+  
+  .opening-hours,
+  .location {
+    width: 41vw;
+    text-align: center;
+  }
+  
+  .location{
+    width: 41vw;
+    padding-right: 12%;
+  }
+  
+  footer img {
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+  
+  .footer-social-links .icon-facebook,
+  .footer-social-links .icon-twitter,
+  .icon-youtube-squared,
+  .icon-instagram {
+    font-size: 2.1vw;
+    color: #FFFFFF;
+  }
+  
+  .pay-cards img { width: 10%; }
+  
+  .footer-social-links { margin-top: 17%;}
+}
+
 .scrollup {
   position: fixed;
   bottom: 2%;
-  right: 0%;
+  right: 2%;
   width: 6%;
-  height: 8%;
+  height: 6%;
   background: url(../assets/icons/icon_top.png) no-repeat;
   opacity: 0.3;
 }
