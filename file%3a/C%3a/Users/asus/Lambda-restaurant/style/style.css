@@ -202,12 +202,12 @@ h1 {
 
   .menu > li {
     margin: 1%;
-    font-size: 3.7vw;
+    font-size: 3.84vw;
   }
 
   .social-links ul {
     left: 10%;
-    margin-right: 0;    
+    margin-right: 0%;    
   }
 
   .icon-facebook,
@@ -286,14 +286,19 @@ h1 {
 
 @media only screen and (max-width:768px){
   .home p {
-    margin-top: 20%;
-    margin-bottom: 2%;
-    font-size: 7.5vw;
+    margin-top: 24%;
+    margin-bottom: 4%;
+    font-size: 8.5vw;
   }
   
   .home-button { word-spacing: 2vw; }
   
-  .book-table,
+  .book-table {
+    margin-top: 7%;
+    padding: 1.2em 3.6em;
+    font-size: 1.8vw;
+  }
+  
   .see-menu {
     margin-top: 7%;
     padding: 1.2em 3.6em;
@@ -301,25 +306,6 @@ h1 {
   }
 
   .home img {width: 30%;}
-}
-
-@media only screen and (max-width:420px){
-  .home { background-position-x: 50%;}
-
-  .home p {
-    margin-top: 24%;
-    margin-bottom: 4%;
-    font-size: 8.5vw;
-  }
-
-  .book-table,
-  .see-menu {
-    margin-top: 7%;
-    padding: 1.2em 3.6em;
-    font-size: 2.8vw;
-  }
-
-  .home img {width: 40%;}
 }
 
 .about {
@@ -366,7 +352,8 @@ h1 {
 }
 
 @media only screen and (max-width:768px){
-   .section-about {
+ 
+  .section-about {
     margin-top: 5.5%;
     margin-left: 2%;
   }
@@ -390,31 +377,6 @@ h1 {
   .image-about-dish {
     margin-top: 7%;
     margin-left: 0;
-  }
-}
-
-@media only screen and (max-width:420px){
-  .about {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .section-about {
-    margin-top: 5.5%;
-    margin-left: 2%;
-  }
-  
-  .title-about { font-size: 6vw;}
-  
-  .text-about { 
-    margin-left: 0;
-    font-size: 3.5vw;
-  }
- 
-  .image-about-dish {
-    margin-top: 2%;
-    margin-left: 15%;
-    width: 70%;
   }
 }
 
@@ -512,23 +474,6 @@ h1 {
     margin: 2%;
     width: 24%;
   }
-}
-
-@media only screen and (max-width:420px){
-  .article-ingredients { grid-template-columns: 0.8fr 1fr; }
-
-  .background-square {
-    width: 88.375vw;
-    height: 87.75vw;
-  }
-  
-  .title-ingredients { font-size: 5.8vw;}
-  
-  .text-ingredients { font-size: 3vw; }
-  
-  .images-ingredients { margin-top: 3.2%; }
-  
-  .images-ingredients >img { width: 28%; }
 }
 
 .article-menu{
@@ -644,6 +589,8 @@ h1 {
   
   .name { font-size: 2.2vw;}
   
+  .price { justify-self: end;}
+  
   .description { font-size: 1.8vw;}
   
   .line { width: 100%; }
@@ -671,29 +618,6 @@ h1 {
   }
   
   .special-text { width: 46.5vw;}
-}
-
-@media only screen and (max-width: 420px){
-
-  .heading-menu {font-size: 6.2vw;}
-  
-  .name { font-size: 4.2vw;}
-  
-  .description { font-size: 3vw;}
-
-  .salads,
-  .main-dishes,
-  .appetisers,
-  .startes { width: 66.1vw;}
- 
-  .special {
-    margin-left: 86.7%;
-    width: 12vw;
-    height: 3.8vw;
-    font-size: 2.8vw;
-  }
-  
-  .special-text { width: 67.5vw;}
 }
 
 .article-reviews {
@@ -755,7 +679,7 @@ h1 {
   color: #F2F4F4;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width:768px){
   
   .reviews-square {
     width: 60vw;
@@ -781,36 +705,6 @@ h1 {
   
   .reviews-author{font-size: 2vw;}
 }
-
-@media only screen and (max-width: 420px){
-  .reviews-square {
-    width: 95vw;
-    height: 76.8vw;
-  }
-
-  .reviews-square img {
-    margin-top: 2.9%;
-    margin-bottom: 2.7%;
-  }
-  
-  .reviews-header {
-    margin-top: 0.7%;
-    font-size: 6.8vw;
-  }
-  
-  .reviews-text {
-    font-size: 3.7vw;
-    line-height: 5.2vw;
-  }
-  
-  .reviews-quotes {font-size: 9.5vw;}
-  
-  .reviews-author{
-    font-size: 3.3vw;
-    line-height: 11vw;
-  }
-}
-
 .article-reservation {
   display: grid;
   grid-template-columns: 2.28fr 1.2fr 3.85fr;
@@ -980,56 +874,6 @@ fieldset div{
   }
 }
 
-@media only screen and (max-width: 420px){
-
-  .article-reservation { grid-template-rows: 0.6fr 1fr;}
-
-  .reservation-image-dish {width: 86.5%;}
-  
-  .reservation-image-desert {
-    position: relative;
-    left: 38%;
-    width: 53%;
-  }
-  
-  .section-reservation {
-    position: relative;
-    right: 58%;
-    width: 150%;
-  }
-  
-  .reservation-heading {font-size: 7vw;}
-  
-  .reservation-text-1,
-  .reservation-text-2 {font-size: 3.5vw;}
-  
-  .reservation-text-2{ margin-bottom: 7%; }
-  
-  .reservation-form {
-    width: 78%;
-    height: 44vw;
-  }
-  
-  .reservation-form label {font-size: 3.2vw;}
-  
-  .reservation-form input,
-  #input-party-number {
-    width: 30.2vw;
-    height: 6.8vw;
-    font-size: 2.9vw;
-    text-indent: 2vw;
-  }
-  
-  .button-form {
-    position: absolute;
-    left: 29.2%;
-    width: 28.2vw;
-    height: 6.8vw;
-    margin-top: 3.5%;
-    font-size: 3.2vw;
-  }
-}
-
 footer {
   display: flex;
   justify-content: space-around;
@@ -1093,8 +937,7 @@ footer img {
 
 .footer-social-links { margin-top: 14%;}
 
-@media only screen and (max-width: 768px){
-
+@media only screen and (max-width:768px){
   .section-header { font-size: 2.3vw;  }
   
   .section-text { font-size: 1.5vw; }
@@ -1134,55 +977,6 @@ footer img {
   .pay-cards img { width: 10%;}
 }
 
-@media only screen and (max-width: 420px){
-
-  footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .section-header { 
-    margin-top: 5%;
-    font-size: 4.3vw;  
-  }
-  
-  .section-text { font-size: 3vw; }
-  
-  .about-us {
-    width: 73vw;
-    padding-top: 0;
-    padding-left: 0;
-    text-align: center;
-    line-height: 3.5vw;
-  }
-  
-  .opening-hours,
-  .location {
-    width: 73vw;
-  }
-  
-  .location{
-    width: 73vw;
-    padding-right: 0;
-  }
-  
-  .footer-social-links .icon-facebook,
-  .footer-social-links .icon-twitter,
-  .icon-youtube-squared,
-  .icon-instagram {
-    font-size: 5vw;
-  }
-
-  .pay-cards {margin-top: 5%;}
-
-  .pay-cards img { width: 10%;}
-
-  .footer-social-links {
-    margin-top: 8%;
-}
-}
-
 .scrollup {
   position: fixed;
   bottom: 2%;
@@ -1191,13 +985,4 @@ footer img {
   height: 6%;
   background: url(../assets/icons/icon_top.png) no-repeat;
   opacity: 0.3;
-}
-
-@media only screen and (max-width: 420px){
-  .scrollup {
-    bottom: 4%;
-    right: 4%;
-    width: 10%;
-    height: 6%;
-  }
 }
